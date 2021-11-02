@@ -8,6 +8,10 @@
     <title>HC Educates 2.0</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="image-grid.css">
+    <link rel="stylesheet" href="tabs.css">
+    <script src="tabs.js" async defer></script>
+
 </head>
 
 <body class='flex-centered flex-column'>
@@ -40,16 +44,62 @@
     <section id='speakers' class='flex-column body-section'>
         <!-- TODO: use swiper or similar to add speakers. Maybe generate from JS list? -->
         <h2>Speakers</h2>
+        
     </section>
 
     <section id='prizes' class='flex-column body-section'>
         <!-- TODO: tabbed layout of prizes. -->
         <h2>Prizes</h2>
+        <!-- Tab links -->
+        <div class="tab">
+            <button id = "link-summary" class="tablinks">Summary</button>
+            <button id = "link-first-prize" class="tablinks">First prize</button>
+            <button id = "link-second-prize" class="tablinks">Second prize</button>
+            <button id = "link-third-prize" class="tablinks">Third prize</button>
+            <button id = "link-participants" class="tablinks">Participants</button>
+        </div>
+
+        <!-- Tab contents. Make sure the div id's match the button's innertext -->
+        <div id="summary" class="tabcontent">
+            <ul>
+                <li>20,000</li>
+                <li>15,000</li>
+                <li>10,000</li>
+            </ul>
+        </div>
+
+        <div id="first-prize" class="tabcontent">
+            20,000
+        </div>
+
+        <div id="second-prize" class="tabcontent">
+            15,000
+        </div>
+        <div id="third-prize" class="tabcontent">
+            10,000
+        </div>
+        <div id="participants" class = "tabcontent">
+            nothing lol
+        </div>
     </section>
 
     <section id='sponsors' class='flex-column body-section'>
         <!-- TODO: CSS grid of sponsors. -->
         <h2>Sponsors</h2>
+        <div class="image-gallery">
+            <div class="column">
+                <img src="https://via.placeholder.com/500">
+                <img src="https://via.placeholder.com/500">
+                <img src="https://via.placeholder.com/500">
+            </div>
+            <div class="column">
+                <img src="https://via.placeholder.com/500">
+                <img src="https://via.placeholder.com/500">
+                <img src="https://via.placeholder.com/500">
+            </div>
+            <!-- Note: If number of images is not a square number, like 6,
+            then put 3 per column div otherwise doesn't work on mobile devices-->
+        </div>
     </section>
 
     <section id='faq' class='flex-column body-section'>
