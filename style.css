@@ -1,0 +1,132 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    display: block;
+    width: 100% !important;
+    height: auto;
+    left: 0px;
+    background-color: #272121;
+    margin: 0;
+}
+
+footer ul.container {
+    padding: 0;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-socials-wrapper {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-banner img {
+    padding: 1em;
+}
+
+.footer-banner {
+    font-family: roboto;
+    font-weight: 900;
+    color: #fff;
+    display: flex;
+}
+
+.footer-banner #hc {
+    display: inline-block;
+    padding: 0.5em;
+    font-size: 46px;
+    top: 0;
+}
+
+.footer-socials ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-socials li {
+    display: inline-block;
+    padding: 1.3em;
+}
+
+.footer-links {
+    display: inline-block;
+    font-family: roboto;
+    font-weight: 500;
+    font-size: 24px;
+    color: #fff;
+}
+
+.footer-links {
+    margin: 1.5em;
+    padding: 1.5em;
+}
+
+.footer-links .comm {
+    padding: 0.1em;
+}
+
+.footer-links .outro {
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 0.5em;
+}
+
+
+.footer-links a {
+    color: inherit;
+}
+
+@media screen and (max-width: 720px) {
+    .footer-banner img {
+        padding: 0em;
+        padding-left: 0.5em;
+    }
+    .footer-banner #hc {
+        display: inline-block;
+        padding: 0.35em;
+        margin-bottom: 0.4em;
+        font-size: 34px;
+    }
+    .footer-socials li {
+        display: inline-block;
+        padding: 0.5em;
+    }
+    
+    .footer-links {
+        padding: 0.5em;
+        margin: 0.5em;
+    }
+
+    .footer-socials-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer > ul.container {
+        flex-direction: column-reverse;
+    }
+
+    .footer-banner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-socials {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer > ul.container > .footer-socials-wrapper {
+        width: 90%;
+    }
+}
