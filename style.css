@@ -83,13 +83,13 @@ details {
 details p {
     font-size: 1.2rem;
     padding: 1.4rem;
-    background: #3cc8e7;
+    background: #018DA6;
     color: white;
     margin: 0;
 }
 
 summary {
-    background: #474259;
+    background: #454759;
     padding: 1.4rem;
     font-size: 1.2rem;
 }
@@ -125,7 +125,7 @@ footer ul.container {
 }
 
 .blue {
-    color: #3cc8e7;
+    color: #3CC8E7;
 }
 
 .flex-centered {
@@ -297,7 +297,7 @@ footer ul.container {
         margin: auto;
     }
     .body-section {
-        width: 98vw;
+        width: 95vw;
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
