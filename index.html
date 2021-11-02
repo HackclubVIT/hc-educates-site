@@ -10,8 +10,63 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    
+<body class='flex-centered flex-column'>
+    <section id='header' class='flex-centered flex-column'>
+        <nav id='main-nav' class="flex-centered">
+            <a href="#about">About</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#speakers">Speakers</a>
+            <a href="#prizes">Prizes</a>
+            <a href="#sponsors">Sponsors</a>
+            <a href="#faq">FAQ</a>
+            <a href="#register">Register</a>
+        </nav>
+        <div id='splash' class='flex-centered flex-column'>
+            <h1>HC Educates</h1>
+            <h1 class='three-d blue'>2.0</h1>
+        </div>
+    </section>
+
+    <section id='about' class='flex-column body-section'>
+        <!-- TODO: add info, graphic with css `background-position: right bottom;` -->
+        <h2>About</h2>
+    </section>
+
+    <section id='schedule' class='flex-column body-section'>
+        <!-- TODO: CSS grid for schedule? -->
+        <h2>Schedule</h2>
+    </section>
+
+    <section id='speakers' class='flex-column body-section'>
+        <!-- TODO: use swiper or similar to add speakers. Maybe generate from JS list? -->
+        <h2>Speakers</h2>
+    </section>
+
+    <section id='prizes' class='flex-column body-section'>
+        <!-- TODO: tabbed layout of prizes. -->
+        <h2>Prizes</h2>
+    </section>
+
+    <section id='sponsors' class='flex-column body-section'>
+        <!-- TODO: CSS grid of sponsors. -->
+        <h2>Sponsors</h2>
+    </section>
+
+    <section id='faq' class='flex-column body-section'>
+        <h2>FAQs</h2>
+
+        <details>
+            <summary class='blue'>Question clicked will be blue</summary>
+            <p>
+                And the answer will be here in white.
+            </p>
+        </details>
+    </section>
+
+    <section id='register' class='flex-column body-section'>
+        <h2>Register</h2>
+        <!-- TODO: Add form link. -->
+    </section>
 
     <footer>
         <ul class="container">
