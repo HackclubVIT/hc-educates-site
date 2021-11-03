@@ -233,6 +233,73 @@ footer ul.container {
     color: inherit;
 }
 
+#about > p {
+    font-size: 2rem;
+    margin: 1rem 4rem 0 1rem;
+}
+
+#about > div > img {
+    width: 20%;
+    float: right;
+}
+
+.register {
+    border-radius: 20px;
+    padding: 1rem 0 1rem 0;
+    margin: 2rem 0 0 1rem;
+    background-image: linear-gradient(#2489A2, #1B537D);
+    width: 30%;
+    font-family: "Phantom Sans";
+    color: white;
+    font-size: 2rem;
+    float: left;
+}
+
+.register:hover {
+    cursor: pointer;
+}
+
+#schedule {
+    clear: both;
+}
+
+.flex-schedule {
+    display: flex;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.flex-child {
+    flex: 40%;
+    margin: 2%;
+    background-color: #A4A5AE;
+    color: #000000;
+    border-radius: 40px;
+}
+
+.flex-child:hover {
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.flex-child > p {
+    padding: 0.5rem 0 1rem 0;
+}
+
+.flex-child > header {
+    border-radius: 40px 40px 0 0;
+    background-color: #34374A;
+    color: #FFFFFF;
+    padding: 1rem;
+}
+
+hr {
+    height: 1px;
+    width: 20%;
+    background-color: #FFFFFF;
+}
+
 @media screen and (max-aspect-ratio: 1/1) {
     .footer-banner img {
         padding: 0em;
@@ -303,6 +370,11 @@ footer ul.container {
     }
     details {
         margin: 0;
+    }
+
+    .flex-schedule {
+        flex: 100%;
+        flex-direction: column;
     }
 }
 
