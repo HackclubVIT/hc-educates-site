@@ -1,9 +1,3 @@
-Array.from(document.getElementsByClassName("tablinks")).forEach(link =>
-    link.addEventListener("click", evt =>
-        revealTab(evt, link.id.split("link-").at(-1))
-    )
-);
-
 const revealTab = (evt, tabName) => {
     Array.from(document.getElementsByClassName("tabcontent")).forEach(
         tab => (tab.style.display = "none")
@@ -14,3 +8,11 @@ const revealTab = (evt, tabName) => {
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
 };
+
+
+Array.from(document.getElementsByClassName("tablinks")).forEach(link =>
+    link.addEventListener("click", evt =>
+        revealTab(evt, link.id.split("link-").at(-1))
+    )
+);
+document.getElementById("link-summary").click();

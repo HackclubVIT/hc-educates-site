@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="image-grid.css">
     <link rel="stylesheet" href="tabs.css">
-    <script src="tabs.js" async defer></script>
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body class='flex-centered flex-column'>
@@ -34,20 +33,23 @@
     <section id='about' class='flex-column body-section'>
         <!-- TODO: add info, graphic with css `background-position: right bottom;` -->
         <h2>About</h2>
-        <p><strong>HC Educates 2.0</strong> is a 48-Hour <strong>Hackathon</strong> with a series of essential <strong>Technical Workshops.</strong></p>
-        <p>It is the perfect oppurtunity for you to learn and grow your skills in the field, and earn numerous certificates in an array of topics.</p>
+        <p><strong>HC Educates 2.0</strong> is a 48-Hour <strong>Hackathon</strong> with a series of essential
+            <strong>Technical Workshops.</strong>
+        </p>
+        <p>It is the perfect oppurtunity for you to learn and grow your skills in the field, and earn numerous
+            certificates in an array of topics.</p>
         <div>
-            <button class = "register">Register Now</button>
+            <button class="register">Register Now</button>
             <img src="assets/img/about_pic.svg" alt="about">
-        <div>
+            <div>
     </section>
 
     <section id='schedule' class='flex-column body-section'>
         <!-- TODO: CSS grid for schedule? -->
         <!-- First row -->
         <h2>Schedule</h2>
-        <div class="flex-schedule">
-            <div class = "flex-child">
+        <div class="schedule-wrapper">
+            <div class="schedule-item">
                 <header>
                     <p>November 12-14</p>
                 </header>
@@ -55,7 +57,7 @@
                 <p>AppDev</p>
                 <p>Aditya Thakur</p>
             </div>
-            <div class = "flex-child">
+            <div class="schedule-item">
                 <header>
                     <p>November 15-17</p>
                 </header>
@@ -63,7 +65,7 @@
                 <p>Hardware</p>
                 <p>Name</p>
             </div>
-            <div class = "flex-child">
+            <div class="schedule-item">
                 <header>
                     <p>November 19-21</p>
                 </header>
@@ -74,8 +76,8 @@
         </div>
 
         <!-- Second Row -->
-        <div class = "flex-schedule">
-            <div class = "flex-child">
+        <div class="schedule-wrapper">
+            <div class="schedule-item">
                 <header>
                     <p>November 21-23</p>
                 </header>
@@ -83,7 +85,7 @@
                 <p>CP</p>
                 <p>Siddharth Singha Roy</p>
             </div>
-            <div class = "flex-child">
+            <div class="schedule-item">
                 <header>
                     <p>November 24-25</p>
                 </header>
@@ -91,7 +93,7 @@
                 <p>Blackbox</p>
                 <p>Name</p>
             </div>
-            <div class = "flex-child">
+            <div class="schedule-item">
                 <header>
                     <p>November 26</p>
                 </header>
@@ -102,8 +104,8 @@
         </div>
 
         <!-- Third Row -->
-        <div class = "flex-schedule">
-            <div class = "flex-child">
+        <div class="schedule-wrapper">
+            <div class="schedule-item">
                 <header>
                     <p>November 26</p>
                 </header>
@@ -115,42 +117,90 @@
     <section id='speakers' class='flex-column body-section'>
         <!-- TODO: use swiper or similar to add speakers. Maybe generate from JS list? -->
         <h2>Speakers</h2>
-        
+        <div class="swiper speaker-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Speaker 1</div>
+                <div class="swiper-slide">Speaker 2</div>
+                <div class="swiper-slide">Speaker 3</div>
+                <div class="swiper-slide">Speaker 4</div>
+                <div class="swiper-slide">Speaker 5</div>
+                <div class="swiper-slide">Speaker 6</div>
+                <div class="swiper-slide">Speaker 7</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
     </section>
 
     <section id='prizes' class='flex-column body-section'>
         <!-- TODO: tabbed layout of prizes. -->
         <h2>Prizes</h2>
         <!-- Tab links -->
-        <div class="tab">
-            <button id = "link-summary" class="tablinks">Summary</button>
-            <button id = "link-first-prize" class="tablinks">First prize</button>
-            <button id = "link-second-prize" class="tablinks">Second prize</button>
-            <button id = "link-third-prize" class="tablinks">Third prize</button>
-            <button id = "link-participants" class="tablinks">Participants</button>
-        </div>
+        <div class="tabwrapper">
+            <div class="tab">
+                <button id="link-summary" class="tablinks">Summary</button>
+                <button id="link-first-prize" class="tablinks">First prize</button>
+                <button id="link-second-prize" class="tablinks">Second prize</button>
+                <button id="link-third-prize" class="tablinks">Third prize</button>
+                <button id="link-participants" class="tablinks">Participants</button>
+            </div>
+            <hr>
+            <!-- Tab contents. Make sure the div id's match the button's innertext -->
+            <div id="summary" class="tabcontent">
+                <div class="prize-categories">
+                    <div class="flex-centered prize-category">
+                        <svg viewBox="0 0 146 145" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="73.1169" cy="72.4832" r="72.1843" fill="#35374A" />
+                            <path
+                                d="M43.5369 94.5439V85.5139H52.2169V64.4439H43.8869V56.3939L47.0369 56.1139C48.7169 55.9739 49.9769 55.6239 50.8169 55.0639C51.6569 54.4573 52.2403 53.4539 52.5669 52.0539L52.9169 50.4439H63.0669V85.5139H71.7469V94.5439H43.5369ZM88.348 83.0239H85.108C85.0813 82.1173 84.748 81.4239 84.108 80.9439C83.468 80.4373 82.5746 80.1839 81.428 80.1839C80.4413 80.1839 79.6546 80.3573 79.068 80.7039C78.4813 81.0506 78.188 81.5306 78.188 82.1439C78.188 82.7306 78.428 83.1973 78.908 83.5439C79.4146 83.8906 80.0413 84.1573 80.788 84.3439L84.788 85.3039C85.908 85.5706 86.868 86.0373 87.668 86.7039C88.4946 87.3439 88.908 88.3306 88.908 89.6639C88.908 91.1839 88.2946 92.4773 87.068 93.5439C85.8413 94.6106 84.148 95.1439 81.988 95.1439C79.908 95.1439 78.148 94.5973 76.708 93.5039C75.268 92.4106 74.5346 90.9839 74.508 89.2239H77.748C77.8546 90.3439 78.308 91.1706 79.108 91.7039C79.908 92.2373 80.908 92.5039 82.108 92.5039C83.2546 92.5039 84.1213 92.2773 84.708 91.8239C85.2946 91.3706 85.588 90.8239 85.588 90.1839C85.588 89.5973 85.348 89.1439 84.868 88.8239C84.388 88.4773 83.7746 88.2106 83.028 88.0239L79.588 87.1839C78.4413 86.9173 77.4013 86.4239 76.468 85.7039C75.5346 84.9573 75.068 83.8639 75.068 82.4239C75.068 80.9573 75.628 79.7839 76.748 78.9039C77.8946 77.9973 79.468 77.5439 81.468 77.5439C83.5213 77.5439 85.1613 78.0239 86.388 78.9839C87.6146 79.9173 88.268 81.2639 88.348 83.0239ZM91.207 80.9439V78.1439H95.767V71.3439H98.927V78.1439H105.007V80.9439H98.927V88.4639C98.927 89.7439 99.1937 90.6773 99.727 91.2639C100.26 91.8506 101.1 92.1439 102.247 92.1439C102.7 92.1439 103.154 92.1173 103.607 92.0639C104.06 91.9839 104.527 91.8906 105.007 91.7839V94.8639C104.474 94.9706 103.954 95.0373 103.447 95.0639C102.94 95.1173 102.46 95.1439 102.007 95.1439C99.8737 95.1439 98.3004 94.6373 97.287 93.6239C96.2737 92.5839 95.767 91.0106 95.767 88.9039V80.9439H91.207Z"
+                                fill="white" />
+                        </svg>
+                        <div class="prize-money">
+                            ₹20,000
+                        </div>
+                    </div>
+                    <div class="flex-centered prize-category">
+                        <svg viewBox="0 0 146 146" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="73.1169" cy="72.8523" r="72.1843" fill="#35374A" />
+                            <path
+                                d="M70.9869 62.7946C70.9869 65.8279 70.1469 68.3946 68.4669 70.4946C66.8336 72.5479 64.9203 74.3679 62.7269 75.9546C60.5336 77.5413 58.3169 79.0113 56.0769 80.3646C53.8836 81.7179 52.2269 83.2113 51.1069 84.8446H71.4769V94.2246H38.9969V91.2846C38.9969 86.6179 40.0936 82.9313 42.2869 80.2246C44.5269 77.5179 46.9769 75.2779 49.6369 73.5046C52.2969 71.7313 54.7236 70.0979 56.9169 68.6046C59.1569 67.0646 60.2769 65.1279 60.2769 62.7946C60.2769 61.5346 59.8803 60.4613 59.0869 59.5746C58.3403 58.6879 57.1269 58.2446 55.4469 58.2446C53.7203 58.2446 52.3903 58.8279 51.4569 59.9946C50.5236 61.1613 50.0336 63.0046 49.9869 65.5246H39.4869C39.5336 59.9713 41.0503 55.8413 44.0369 53.1346C47.0236 50.4279 50.8969 49.0746 55.6569 49.0746C57.8503 49.0746 59.8803 49.3779 61.7469 49.9846C63.6603 50.5446 65.2936 51.4079 66.6469 52.5746C68.0003 53.6946 69.0503 55.1179 69.7969 56.8446C70.5903 58.5713 70.9869 60.5546 70.9869 62.7946ZM77.283 94.2246V77.8246H80.483V81.4646C81.0696 80.0246 81.9096 78.9579 83.003 78.2646C84.123 77.5713 85.323 77.2246 86.603 77.2246C88.3896 77.2246 89.8296 77.8646 90.923 79.1446C92.0163 80.3979 92.563 82.1846 92.563 84.5046V94.2246H89.363V85.3046C89.363 83.7046 89.0563 82.4646 88.443 81.5846C87.8296 80.6779 86.843 80.2246 85.483 80.2246C84.043 80.2246 82.843 80.7446 81.883 81.7846C80.9496 82.8246 80.483 84.3846 80.483 86.4646V94.2246H77.283ZM97.1786 86.0246C97.1786 84.6113 97.4053 83.3579 97.8586 82.2646C98.3386 81.1446 98.9386 80.2246 99.6586 79.5046C100.379 78.7579 101.192 78.1979 102.099 77.8246C103.032 77.4246 103.952 77.2246 104.859 77.2246C106.032 77.2246 107.192 77.5446 108.339 78.1846C109.485 78.7979 110.392 79.7446 111.059 81.0246V67.0246H114.259V94.2246H111.059V91.0246C110.392 92.3046 109.485 93.2646 108.339 93.9046C107.192 94.5179 106.032 94.8246 104.859 94.8246C103.952 94.8246 103.032 94.6246 102.099 94.2246C101.192 93.8513 100.379 93.3046 99.6586 92.5846C98.9386 91.8379 98.3386 90.9179 97.8586 89.8246C97.4053 88.7046 97.1786 87.4379 97.1786 86.0246ZM105.619 80.2246C104.045 80.2246 102.792 80.7846 101.859 81.9046C100.925 83.0246 100.459 84.3979 100.459 86.0246C100.459 87.6513 100.925 89.0246 101.859 90.1446C102.792 91.2646 104.045 91.8246 105.619 91.8246C107.165 91.8246 108.472 91.3179 109.539 90.3046C110.605 89.2913 111.139 87.8646 111.139 86.0246C111.139 84.1846 110.592 82.7579 109.499 81.7446C108.432 80.7313 107.139 80.2246 105.619 80.2246Z"
+                                fill="white" />
+                        </svg>
+                        <div class="prize-money">
+                            ₹15,000
+                        </div>
+                    </div>
+                    <div class="flex-centered prize-category">
+                        <svg viewBox="0 0 146 145" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="73.1169" cy="72.2205" r="72.1843" fill="#35374A" />
+                            <path
+                                d="M56.6069 76.4353H52.8969V68.5253H57.6569C59.5703 68.5253 60.9703 68.0353 61.8569 67.0553C62.7436 66.0753 63.1869 64.8619 63.1869 63.4153C63.1869 62.1086 62.7903 61.0119 61.9969 60.1253C61.2036 59.2386 59.9436 58.7953 58.2169 58.7953C56.6303 58.7953 55.2536 59.2619 54.0869 60.1953C52.9203 61.0819 52.3136 62.7153 52.2669 65.0953H41.9769C42.1636 60.4753 43.7736 56.8586 46.8069 54.2453C49.8403 51.5853 53.9236 50.2553 59.0569 50.2553C63.5369 50.2553 67.1303 51.2353 69.8369 53.1953C72.5436 55.1086 73.8969 57.8853 73.8969 61.5253C73.8969 63.9053 73.2903 66.0519 72.0769 67.9653C70.9103 69.8786 69.0436 71.3486 66.4769 72.3753C69.4169 73.2619 71.5636 74.6153 72.9169 76.4353C74.3169 78.2553 75.0169 80.4486 75.0169 83.0153C75.0169 85.1153 74.5736 87.0053 73.6869 88.6853C72.8469 90.3653 71.6803 91.7886 70.1869 92.9553C68.7403 94.0753 66.9903 94.9386 64.9369 95.5453C62.9303 96.1519 60.7603 96.4553 58.4269 96.4553C53.1536 96.4553 49.0236 95.1019 46.0369 92.3953C43.0503 89.6419 41.4636 85.9553 41.2769 81.3353H51.5669C51.8003 83.9019 52.5469 85.6519 53.8069 86.5853C55.0669 87.5186 56.6069 87.9853 58.4269 87.9853C60.1536 87.9853 61.5536 87.4953 62.6269 86.5153C63.7469 85.4886 64.3069 84.1119 64.3069 82.3853C64.3069 80.6586 63.7469 79.2353 62.6269 78.1153C61.5069 76.9953 59.5003 76.4353 56.6069 76.4353ZM80.4451 95.4053V79.0053H83.6051V82.4853C84.1917 81.1253 84.9917 80.1119 86.0051 79.4453C87.0451 78.7519 88.2184 78.4053 89.5251 78.4053C89.7917 78.4053 90.0317 78.4319 90.2451 78.4853C90.4584 78.5119 90.6451 78.5386 90.8051 78.5653V82.2053C90.3784 82.1253 89.9384 82.0586 89.4851 82.0053C89.0584 81.9519 88.6317 81.9253 88.2051 81.9253C86.5784 81.9253 85.4051 82.4319 84.6851 83.4453C83.9651 84.4586 83.6051 86.1119 83.6051 88.4053V95.4053H80.4451ZM92.6454 87.2053C92.6454 85.7919 92.872 84.5386 93.3254 83.4453C93.8054 82.3253 94.4054 81.4053 95.1254 80.6853C95.8454 79.9386 96.6587 79.3786 97.5654 79.0053C98.4987 78.6053 99.4187 78.4053 100.325 78.4053C101.499 78.4053 102.659 78.7253 103.805 79.3653C104.952 79.9786 105.859 80.9253 106.525 82.2053V68.2053H109.725V95.4053H106.525V92.2053C105.859 93.4853 104.952 94.4453 103.805 95.0853C102.659 95.6986 101.499 96.0053 100.325 96.0053C99.4187 96.0053 98.4987 95.8053 97.5654 95.4053C96.6587 95.0319 95.8454 94.4853 95.1254 93.7653C94.4054 93.0186 93.8054 92.0986 93.3254 91.0053C92.872 89.8853 92.6454 88.6186 92.6454 87.2053ZM101.085 81.4053C99.512 81.4053 98.2587 81.9653 97.3254 83.0853C96.392 84.2053 95.9254 85.5786 95.9254 87.2053C95.9254 88.8319 96.392 90.2053 97.3254 91.3253C98.2587 92.4453 99.512 93.0053 101.085 93.0053C102.632 93.0053 103.939 92.4986 105.005 91.4853C106.072 90.4719 106.605 89.0453 106.605 87.2053C106.605 85.3653 106.059 83.9386 104.965 82.9253C103.899 81.9119 102.605 81.4053 101.085 81.4053Z"
+                                fill="white" />
+                        </svg>
+                        <div class="prize-money">
+                            ₹10,000
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <!-- Tab contents. Make sure the div id's match the button's innertext -->
-        <div id="summary" class="tabcontent">
-            <ul>
-                <li>20,000</li>
-                <li>15,000</li>
-                <li>10,000</li>
-            </ul>
-        </div>
+            <div id="first-prize" class="tabcontent">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta dolore cupiditate vel nihil veniam quas
+                reiciendis iste eos sed officia enim excepturi eum in dolor dolorum, tempore tempora veritatis? Delectus.
+            </div>
 
-        <div id="first-prize" class="tabcontent">
-            20,000
-        </div>
-
-        <div id="second-prize" class="tabcontent">
-            15,000
-        </div>
-        <div id="third-prize" class="tabcontent">
-            10,000
-        </div>
-        <div id="participants" class = "tabcontent">
-            nothing lol
+            <div id="second-prize" class="tabcontent">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis natus consectetur soluta quasi voluptatum modi
+                totam vel commodi, debitis quas cumque culpa corporis odit facere quibusdam quam nostrum, similique facilis!
+            </div>
+            <div id="third-prize" class="tabcontent">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis natus consectetur soluta quasi voluptatum modi
+                totam vel commodi, debitis quas cumque culpa corporis odit facere quibusdam quam nostrum, similique facilis!
+            </div>
+            <div id="participants" class="tabcontent">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis natus consectetur soluta quasi voluptatum modi
+                totam vel commodi, debitis quas cumque culpa corporis odit facere quibusdam quam nostrum, similique facilis!
+            </div>
         </div>
     </section>
 
@@ -159,17 +209,15 @@
         <h2>Sponsors</h2>
         <div class="image-gallery">
             <div class="column">
-                <img src="https://via.placeholder.com/500">
-                <img src="https://via.placeholder.com/500">
-                <img src="https://via.placeholder.com/500">
+                <img src="https://via.placeholder.com/300x300" alt="placeholder image">
+                <img src="https://via.placeholder.com/300x300" alt="placeholder image">
+                <img src="https://via.placeholder.com/300x300" alt="placeholder image">
             </div>
             <div class="column">
-                <img src="https://via.placeholder.com/500">
-                <img src="https://via.placeholder.com/500">
-                <img src="https://via.placeholder.com/500">
+                <img src="https://via.placeholder.com/300x300" alt="placeholder image">
+                <img src="https://via.placeholder.com/300x300" alt="placeholder image">
+                <img src="https://via.placeholder.com/300x300" alt="placeholder image">
             </div>
-            <!-- Note: If number of images is not a square number, like 6,
-            then put 3 per column div otherwise doesn't work on mobile devices-->
         </div>
     </section>
 
@@ -187,7 +235,7 @@
     <section id='register' class='flex-column body-section'>
         <h2>Register</h2>
         <!-- TODO: Add form link. -->
-        <button class = "register">any-text</button>
+        <button class="register">any-text</button>
     </section>
 
     <footer>
@@ -220,5 +268,16 @@
         </ul>
     </footer>
 </body>
+
+<script src="tabs.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper(".speaker-swiper", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
 
 </html>
