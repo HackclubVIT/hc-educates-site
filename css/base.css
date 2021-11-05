@@ -1,21 +1,18 @@
 @font-face {
     font-family: "Earth Orbiter";
     font-weight: bold;
-    src: url("/assets/ttf/earthorbiterbold.ttf");
+    src: url("../assets/ttf/earthorbiterbold.ttf");
 }
 
 @font-face {
     font-family: "Earth Orbiter 3D";
-    src: url("/assets/ttf/earthorbiterdeep3d.ttf");
+    src: url("../assets/ttf/earthorbiterdeep3d.ttf");
     font-weight: bold;
 }
 
 @font-face {
     font-family: "Phantom Sans";
-    src: url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff")
-            format("woff"),
-        url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2")
-            format("woff2");
+    src: url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff") format("woff"), url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -23,10 +20,7 @@
 
 @font-face {
     font-family: "Phantom Sans";
-    src: url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff")
-            format("woff"),
-        url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff2")
-            format("woff2");
+    src: url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff") format("woff"), url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff2") format("woff2");
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -34,21 +28,13 @@
 
 @font-face {
     font-family: "Phantom Sans";
-    src: url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff")
-            format("woff"),
-        url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff2")
-            format("woff2");
+    src: url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff") format("woff"), url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff2") format("woff2");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: "Earth Orbiter";
     color: white;
     margin: 1rem;
@@ -78,8 +64,7 @@ h6 {
     font-size: 1rem;
 }
 
-html,
-body {
+html, body {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -109,9 +94,7 @@ summary {
     font-size: 1.2rem;
 }
 
-a,
-a:link,
-a:visited {
+a, a:link, a:visited {
     color: inherit;
     border-bottom: 2px solid transparent;
 }
@@ -169,7 +152,7 @@ footer ul.container {
 
 #header {
     background-position: center;
-    background-image: url(/assets/img/Circuit.png);
+    background-image: url(../assets/img/Circuit.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -181,7 +164,7 @@ footer ul.container {
     margin-bottom: 8rem;
 }
 
-#splash > h1 {
+#splash>h1 {
     text-align: center;
 }
 
@@ -251,12 +234,12 @@ footer ul.container {
     color: inherit;
 }
 
-#about > p {
+#about>p {
     font-size: 2rem;
     margin: 1rem 4rem 0 1rem;
 }
 
-#about > div > img {
+#about>div>img {
     width: 20%;
     float: right;
 }
@@ -302,11 +285,11 @@ footer ul.container {
     color: #000000;
 }
 
-.schedule-item > p {
+.schedule-item>p {
     padding: 0.5rem 0 1rem 0;
 }
 
-.schedule-item > header {
+.schedule-item>header {
     border-radius: 40px 40px 0 0;
     background-color: #34374a;
     color: #ffffff;
@@ -345,7 +328,7 @@ hr {
         flex-direction: column;
         margin-bottom: none;
     }
-    footer > ul.container {
+    footer>ul.container {
         flex-direction: column-reverse;
     }
     .footer-banner {
@@ -358,7 +341,7 @@ hr {
         align-items: center;
         justify-content: center;
     }
-    footer > ul.container > .footer-socials-wrapper {
+    footer>ul.container>.footer-socials-wrapper {
         width: 90%;
     }
     h1 {
@@ -390,7 +373,6 @@ hr {
     details {
         margin: 4vw;
     }
-
     .schedule-wrapper {
         flex: 100%;
         flex-direction: column;
@@ -428,6 +410,6 @@ hr {
     }
 }
 
-details[open] > *:not(summary) {
+details[open]>*:not(summary) {
     animation: details-show 0.2s ease-in-out;
 }

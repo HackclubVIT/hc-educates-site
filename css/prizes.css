@@ -70,7 +70,7 @@
 }
 
 #summary {
-    background-image: url("/assets/img/prize-illustration.png");
+    background-image: url("../assets/img/prize-illustration.png");
     background-position: right bottom;
     background-size: contain;
     background-repeat: no-repeat;
