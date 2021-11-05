@@ -234,20 +234,33 @@ footer ul.container {
     color: inherit;
 }
 
-#about>p {
-    font-size: 2rem;
-    margin: 1rem 4rem 0 1rem;
+#splash>.large {
+    font-size: 8rem;
 }
 
-#about>div>img {
-    width: 20%;
-    float: right;
+#about {
+    width: 100%;
+    background-image: url('../assets/img/about_pic.svg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 25% auto;
+    min-height: 80vh;
+    text-shadow: 2px 2px #303030;
+}
+
+#about>* {
+    margin-left: 6vw;
+    margin-right: 6vw;
+}
+
+#about>p {
+    font-size: 1.4rem;
+    max-width: 60%;
 }
 
 .register {
     border-radius: 20px;
-    padding: 1rem 0 1rem 0;
-    margin: 2rem 0 0 1rem;
+    padding: 1rem;
     background: linear-gradient(#2489a2, #1b537d);
     font-family: "Phantom Sans";
     color: white;
@@ -268,7 +281,7 @@ footer ul.container {
 .schedule-wrapper {
     display: flex;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.4rem;
 }
 
 .schedule-item {
@@ -277,12 +290,17 @@ footer ul.container {
     background-color: #a4a5ae;
     color: #000000;
     border-radius: 40px;
+    font-size: 1.8rem;
 }
 
 .schedule-item:hover {
     cursor: pointer;
     background-color: #ffffff;
     color: #000000;
+}
+
+.schedule-item:hover>header {
+    color: #3cc8e7;
 }
 
 .schedule-item>p {
@@ -293,6 +311,7 @@ footer ul.container {
     border-radius: 40px 40px 0 0;
     background-color: #34374a;
     color: #ffffff;
+    font-weight: bold;
     padding: 1rem;
 }
 
@@ -377,6 +396,12 @@ hr {
         flex: 100%;
         flex-direction: column;
     }
+    #splash>.large {
+        font-size: 3.4rem;
+    }
+    #about {
+        background-size: auto 40%;
+    }
 }
 
 @media screen and (max-aspect-ratio: 4/3) {
@@ -412,4 +437,20 @@ hr {
 
 details[open]>*:not(summary) {
     animation: details-show 0.2s ease-in-out;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 20px #2d9da9;
+    }
+    50% {
+        text-shadow: 0 0 30px #34b3c1, 0 0 10px #4dbbc7;
+    }
+    100% {
+        text-shadow: 0 0 20px #2d9da9;
+    }
+}
+
+.three-d.blue.large {
+    animation: 2s glow infinite;
 }

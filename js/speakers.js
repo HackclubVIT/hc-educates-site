@@ -6,15 +6,15 @@ class Speaker {
 
 const speakerList = new Array(6).fill(
     new Speaker({
-        image: " https://via.placeholder.com/100x100",
+        image: " https://via.placeholder.com/300x300",
         name: "Speaker 1",
         occupation: "Web developer",
         title: "workshop",
-        about: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-         ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-         voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
+        about: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+        quis nostrud exercitation laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in velit esse cillum dolore eu fugiat nulla 
+        pariatur. Excepteur sint occaecat cupidatat non proident.`,
     })
 );
 
@@ -26,11 +26,13 @@ for (const speaker of speakerList) {
                 <div class="speaker-image">
                     <img src="${speaker.image}">
                 </div>
-                <div class="speaker-name">
-                    <strong>${speaker.name}</strong>
-                </div>
-                <div class="speaker-occupation">
-                    <em>${speaker.occupation}</em>
+                <div class='speaker-details flex-column flex-centered'>
+                    <div class="speaker-name">
+                        <strong>${speaker.name}</strong>
+                    </div>
+                    <div class="speaker-occupation">
+                        <em>${speaker.occupation}</em>
+                    </div>
                 </div>
             </div>
             <div class="speaker-event">
@@ -51,5 +53,8 @@ const swiper = new Swiper(".speaker-swiper", {
         prevEl: ".swiper-button-prev",
     },
     preventInteractionOnTransition: true,
-    effect: 'slide'
+    effect: 'coverflow',
+    pagination: {
+        el: ".swiper-pagination",
+    },
 });
