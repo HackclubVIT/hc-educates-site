@@ -1,0 +1,96 @@
+.tab {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 0;
+}
+
+.tabwrapper {
+    padding-top: 0.5rem;
+    border-radius: 0.5rem;
+    margin: 1.2rem;
+    background: linear-gradient(101.04deg, #008ea6 0.72%, #233f6f 100%);
+}
+
+.tabwrapper hr {
+    width: 90%;
+    margin-top: 0.1rem;
+    height: 0.2px;
+    border: none;
+}
+
+.tab button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.8rem 0.4rem;
+    transition: 0.3s;
+    color: white;
+    font-size: 1.1rem;
+    font-family: "Phantom Sans", sans-serif;
+}
+
+/* .tab button.active {
+    font-weight: bold;
+    transform: scale(2);
+} */
+
+.tab button.active {
+    font-weight: bold;
+}
+
+.tabcontent {
+    display: flex;
+    justify-content: space-between;
+    display: none;
+    margin-top: 0;
+}
+
+.prize-categories {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.prize-money {
+    padding: 5% 5%;
+    display: inline-block;
+    font-family: "Phantom Sans", sans-serif;
+    font-size: 3.4vw;
+    font-weight: bold;
+}
+
+.prize-categories svg {
+    width: 20%;
+    padding: 1em;
+}
+
+.prize-category {
+    justify-content: left;
+}
+
+#summary {
+    background-image: url("/assets/img/prize-illustration.png");
+    background-position: right bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media not all and (hover: none) {
+    .tab button:hover {
+        letter-spacing: 0;
+        transform: scale(1.2);
+    }
+}
+
+@media screen and (max-aspect-ratio: 4/3) {
+    .tab button {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+    .tab button {
+        font-size: 0.8rem;
+    }
+}

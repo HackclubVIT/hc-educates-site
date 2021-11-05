@@ -1,0 +1,76 @@
+/* .image-gallery {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    margin: 4vw;
+}
+
+.column img {
+    margin: 0.5em;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+Above is CSS for flexbox image gallery
+Below is CSS assuming square grid of sponsors like the figma
+depending on actual sponsors can use either.
+*/
+
+.square {
+    float: left;
+    position: relative;
+    width: 30%;
+    padding-bottom: 30%;
+    margin: calc(5% / 3);
+    border-radius: 10%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sponsor1 {
+    background: url("https://via.placeholder.com/300x300");
+}
+.sponsor2 {
+    background: url("https://via.placeholder.com/300x300");
+}
+.sponsor3 {
+    background: url("https://via.placeholder.com/300x300");
+}
+.sponsor4 {
+    background: url("https://via.placeholder.com/300x300");
+}
+.sponsor5 {
+    background: url("https://via.placeholder.com/300x300");
+}
+.sponsor6 {
+    background: url("https://via.placeholder.com/300x300");
+}
+.sponsor7 {
+    background: url("https://via.placeholder.com/300x300");
+}
+.sponsor8 {
+    background: url("https://via.placeholder.com/300x300");
+}
+.sponsor9 {
+    background: url("https://via.placeholder.com/300x300");
+}
