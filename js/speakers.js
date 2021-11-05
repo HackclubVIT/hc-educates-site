@@ -1,13 +1,6 @@
-const swiper = new Swiper(".speaker-swiper", {
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-});
-
 class Speaker {
-    constructor({ image, name, occupation, title, about }) {
-        Object.assign(this, arguments[0]);
+    constructor(args) {
+        Object.assign(this, args);
     }
 }
 
@@ -25,7 +18,7 @@ const speakerList = new Array(6).fill(
     })
 );
 
-const container = document.getElementById("speakers-swiper");
+const container = document.querySelector("#speakers-swiper");
 for (const speaker of speakerList) {
     container.innerHTML += `
         <div class="swiper-slide">
@@ -34,15 +27,15 @@ for (const speaker of speakerList) {
                             <img src="${speaker.image}">
                         </div>
                         <div class="speaker-name">
-                            ${speaker.name}
+                            <strong>${speaker.name}</strong>
                         </div>
                         <div class="speaker-occupation">
-                            ${speaker.occupation}
+                            <em>${speaker.occupation}</em>
                         </div>
                     </div>
                     <div class="speaker-event">
                         <div class = "speaker-event-title">
-                            ${speaker.title}
+                            <strong>${speaker.title}</strong>
                         </div>
                         <div class = "speaker-event-about">
                             ${speaker.about}
@@ -51,3 +44,10 @@ for (const speaker of speakerList) {
                 </div>
     `;
 }
+
+const swiper = new Swiper(".speaker-swiper", {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
