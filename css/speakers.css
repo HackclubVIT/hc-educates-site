@@ -24,3 +24,7 @@
         flex-direction: column;
     }
 }
+
+.swiper-button-next, .swiper-button-prev {
+    --swiper-theme-color: white;
+}

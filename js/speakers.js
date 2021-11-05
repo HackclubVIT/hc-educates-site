@@ -22,26 +22,26 @@ const container = document.querySelector("#speakers-swiper");
 for (const speaker of speakerList) {
     container.innerHTML += `
         <div class="swiper-slide">
-                    <div class="speaker-profile">
-                        <div class="speaker-image">
-                            <img src="${speaker.image}">
-                        </div>
-                        <div class="speaker-name">
-                            <strong>${speaker.name}</strong>
-                        </div>
-                        <div class="speaker-occupation">
-                            <em>${speaker.occupation}</em>
-                        </div>
-                    </div>
-                    <div class="speaker-event">
-                        <div class = "speaker-event-title">
-                            <strong>${speaker.title}</strong>
-                        </div>
-                        <div class = "speaker-event-about">
-                            ${speaker.about}
-                        </div>
-                    </div>
+            <div class="speaker-profile">
+                <div class="speaker-image">
+                    <img src="${speaker.image}">
                 </div>
+                <div class="speaker-name">
+                    <strong>${speaker.name}</strong>
+                </div>
+                <div class="speaker-occupation">
+                    <em>${speaker.occupation}</em>
+                </div>
+            </div>
+            <div class="speaker-event">
+                <div class = "speaker-event-title">
+                    <strong>${speaker.title}</strong>
+                </div>
+                <div class = "speaker-event-about">
+                    ${speaker.about}
+                </div>
+            </div>
+        </div>
     `;
 }
 
@@ -50,4 +50,6 @@ const swiper = new Swiper(".speaker-swiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    preventInteractionOnTransition: true,
+    effect: 'slide'
 });
