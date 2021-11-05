@@ -1,3 +1,7 @@
+:root {
+    --swiper-navigation-size: 80px !important;
+}
+
 .swiper-slide {
     font-size: 1.4rem;
     background: linear-gradient( 99.76deg, rgba(64, 127, 221, 0.62) 0.41%, rgba(64, 127, 221, 0.07) 98.75%);
@@ -25,6 +29,14 @@
     }
 }
 
-.swiper-button-next, .swiper-button-prev {
-    --swiper-theme-color: white;
+.swiper-button-next::after, .swiper-button-prev::after {
+    content: "" !important;
+}
+
+.swiper-button-prev {
+    transform: rotateZ(-180deg);
+}
+
+.swiper-button-prev, .swiper-button-next {
+    position: relative;
 }
