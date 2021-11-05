@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HC Educates 2.0</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="image-grid.css">
-    <link rel="stylesheet" href="tabs.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/sponsors.css">
+    <link rel="stylesheet" href="css/prizes.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
@@ -45,8 +45,6 @@
     </section>
 
     <section id='schedule' class='flex-column body-section'>
-        <!-- TODO: CSS grid for schedule? -->
-        <!-- First row -->
         <h2>Schedule</h2>
         <div class="schedule-wrapper">
             <div class="schedule-item">
@@ -75,7 +73,6 @@
             </div>
         </div>
 
-        <!-- Second Row -->
         <div class="schedule-wrapper">
             <div class="schedule-item">
                 <header>
@@ -102,8 +99,6 @@
                 <p>Ajinkya Lokhante</p>
             </div>
         </div>
-
-        <!-- Third Row -->
         <div class="schedule-wrapper">
             <div class="schedule-item">
                 <header>
@@ -114,18 +109,10 @@
         </div>
     </section>
 
-    <section id='speakers' class='flex-column body-section'>
-        <!-- TODO: use swiper or similar to add speakers. Maybe generate from JS list? -->
+    <section id='speakers' class='body-section'>
         <h2>Speakers</h2>
         <div class="swiper speaker-swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">Speaker 1</div>
-                <div class="swiper-slide">Speaker 2</div>
-                <div class="swiper-slide">Speaker 3</div>
-                <div class="swiper-slide">Speaker 4</div>
-                <div class="swiper-slide">Speaker 5</div>
-                <div class="swiper-slide">Speaker 6</div>
-                <div class="swiper-slide">Speaker 7</div>
+            <div id = "speakers-swiper" class="swiper-wrapper">
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -186,39 +173,42 @@
 
             <div id="first-prize" class="tabcontent">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta dolore cupiditate vel nihil veniam quas
-                reiciendis iste eos sed officia enim excepturi eum in dolor dolorum, tempore tempora veritatis? Delectus.
+                reiciendis iste eos sed officia enim excepturi eum in dolor dolorum, tempore tempora veritatis?
+                Delectus.
             </div>
 
             <div id="second-prize" class="tabcontent">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis natus consectetur soluta quasi voluptatum modi
-                totam vel commodi, debitis quas cumque culpa corporis odit facere quibusdam quam nostrum, similique facilis!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis natus consectetur soluta quasi voluptatum
+                modi
+                totam vel commodi, debitis quas cumque culpa corporis odit facere quibusdam quam nostrum, similique
+                facilis!
             </div>
             <div id="third-prize" class="tabcontent">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis natus consectetur soluta quasi voluptatum modi
-                totam vel commodi, debitis quas cumque culpa corporis odit facere quibusdam quam nostrum, similique facilis!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis natus consectetur soluta quasi voluptatum
+                modi
+                totam vel commodi, debitis quas cumque culpa corporis odit facere quibusdam quam nostrum, similique
+                facilis!
             </div>
             <div id="participants" class="tabcontent">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis natus consectetur soluta quasi voluptatum modi
-                totam vel commodi, debitis quas cumque culpa corporis odit facere quibusdam quam nostrum, similique facilis!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis natus consectetur soluta quasi voluptatum
+                modi
+                totam vel commodi, debitis quas cumque culpa corporis odit facere quibusdam quam nostrum, similique
+                facilis!
             </div>
         </div>
     </section>
 
-    <section id='sponsors' class='flex-column body-section'>
-        <!-- TODO: CSS grid of sponsors. -->
+    <section id='sponsors' class='body-section'>
         <h2>Sponsors</h2>
-        <div class="image-gallery">
-            <div class="column">
-                <img src="https://via.placeholder.com/300x300" alt="placeholder image">
-                <img src="https://via.placeholder.com/300x300" alt="placeholder image">
-                <img src="https://via.placeholder.com/300x300" alt="placeholder image">
-            </div>
-            <div class="column">
-                <img src="https://via.placeholder.com/300x300" alt="placeholder image">
-                <img src="https://via.placeholder.com/300x300" alt="placeholder image">
-                <img src="https://via.placeholder.com/300x300" alt="placeholder image">
-            </div>
-        </div>
+        <div class="square sponsor1"></div>
+        <div class="square sponsor2"></div>
+        <div class="square sponsor3"></div>
+        <div class="square sponsor4"></div>
+        <div class="square sponsor5"></div>
+        <div class="square sponsor6"></div>
+        <div class="square sponsor7"></div>
+        <div class="square sponsor8"></div>
+        <div class="square sponsor9"></div>
     </section>
 
     <section id='faq' class='flex-column body-section'>
@@ -235,7 +225,7 @@
     <section id='register' class='flex-column body-section'>
         <h2>Register</h2>
         <!-- TODO: Add form link. -->
-        <button class="register">any-text</button>
+        <button class="register">Register</button>
     </section>
 
     <footer>
@@ -269,7 +259,7 @@
     </footer>
 </body>
 
-<script src="tabs.js"></script>
+<script src="js/tabs.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
     const swiper = new Swiper(".speaker-swiper", {

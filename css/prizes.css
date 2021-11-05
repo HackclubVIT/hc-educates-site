@@ -7,7 +7,7 @@
 .tabwrapper {
     padding-top: 0.5rem;
     border-radius: 0.5rem;
-    margin: 4vw;
+    margin: 1.2rem;
     background: linear-gradient(101.04deg, #008ea6 0.72%, #233f6f 100%);
 }
 
@@ -26,10 +26,14 @@
     padding: 0.8rem 0.4rem;
     transition: 0.3s;
     color: white;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     font-family: "Phantom Sans", sans-serif;
-    text-align: center;
 }
+
+/* .tab button.active {
+    font-weight: bold;
+    transform: scale(2);
+} */
 
 .tab button.active {
     font-weight: bold;
@@ -66,7 +70,7 @@
 }
 
 #summary {
-    background-image: url("./assets/img/prize-illustration.png");
+    background-image: url("/assets/img/prize-illustration.png");
     background-position: right bottom;
     background-size: contain;
     background-repeat: no-repeat;
@@ -74,8 +78,19 @@
 
 @media not all and (hover: none) {
     .tab button:hover {
-        font-weight: bold;
         letter-spacing: 0;
         transform: scale(1.2);
+    }
+}
+
+@media screen and (max-aspect-ratio: 4/3) {
+    .tab button {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+    .tab button {
+        font-size: 0.8rem;
     }
 }

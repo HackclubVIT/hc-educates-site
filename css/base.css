@@ -1,12 +1,12 @@
 @font-face {
     font-family: "Earth Orbiter";
     font-weight: bold;
-    src: url("assets/ttf/earthorbiterbold.ttf");
+    src: url("/assets/ttf/earthorbiterbold.ttf");
 }
 
 @font-face {
     font-family: "Earth Orbiter 3D";
-    src: url("assets/ttf/earthorbiterdeep3d.ttf");
+    src: url("/assets/ttf/earthorbiterdeep3d.ttf");
     font-weight: bold;
 }
 
@@ -92,7 +92,7 @@ body {
 }
 
 details {
-    margin-left: 2rem;
+    margin-left: 1.2rem;
 }
 
 details p {
@@ -169,7 +169,7 @@ footer ul.container {
 
 #header {
     background-position: center;
-    background-image: url(assets/img/Circuit.png);
+    background-image: url(/assets/img/Circuit.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -268,7 +268,7 @@ footer ul.container {
     background: linear-gradient(#2489a2, #1b537d);
     font-family: "Phantom Sans";
     color: white;
-    font-size: 2rem;
+    font-size: 1.3rem;
     float: left;
     min-width: 30%;
     border: none;
@@ -362,7 +362,7 @@ hr {
         width: 90%;
     }
     h1 {
-        font-size: 2.8rem;
+        font-size: 3rem;
     }
     h2 {
         font-size: 2.5rem;
@@ -403,6 +403,7 @@ hr {
     }
     #main-nav a {
         margin: 0.4rem;
+        font-size: 1.5rem;
     }
 }
 
