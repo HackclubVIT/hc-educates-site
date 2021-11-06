@@ -78,14 +78,19 @@ body {
 
 details {
     margin-left: 1.2rem;
+    margin-bottom: 2rem;
 }
 
-details p {
+details>* {
     font-size: 1.2rem;
     padding: 1.4rem;
     background: #018da6;
     color: white;
     margin: 0;
+}
+
+details>ul {
+    padding-left: 4rem;
 }
 
 summary {
