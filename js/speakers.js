@@ -4,19 +4,31 @@ class Speaker {
     }
 }
 
-const speakerList = new Array(6).fill(
-    new Speaker({
-        image: " https://via.placeholder.com/300x300",
-        name: "Speaker 1",
-        occupation: "Web developer",
-        title: "workshop",
-        about: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-        quis nostrud exercitation laboris nisi ut aliquip ex ea commodo consequat. 
-        Duis aute irure dolor in reprehenderit in velit esse cillum dolore eu fugiat nulla 
-        pariatur. Excepteur sint occaecat cupidatat non proident.`,
-    })
-);
+const speakerList = [{
+    image: "../assets/img/galiciag.png",
+    name: "Galicia Gordon",
+    occupation: "Educator",
+    title: "Entrepreneurship",
+    about: `Galicia Gordon is the Founder of Leading Learners, 
+        the all-in-one platform for free student resources. Galicia 
+        started Leading Learners to develop a centralized support 
+        system for students — tying together the resources, materials, 
+        and tools students with various challenges may need. The startup 
+        is supporting thousands of unheard stories of students with 
+        academic struggles and financial barriers in education.`,
+}, {
+    image: "../assets/img/praveenk.png",
+    name: "Praveen Kumar",
+    occupation: "Full-stack specialist",
+    title: "Introduction to Flutter",
+    about: `Praveen Kumar is a Full Stack JavaScript Specialist from London, 
+    England, originally from Chennai, India, specialising on React and node.js, 
+    working for one of the top two banks in the UK, which he resigned recently. 
+    He’s got about a decade of experience in the Industry. He’s a Web Specialist, 
+    Careers Coach Mentor, ex-Microsoft Most Valuable Professional, Speaker, 
+    Author and also a Guinness Record Holder with Microsoft AppFest. 
+    Oh, and out of techie stuff, he’s a Cat Lover.`
+}]
 
 const container = document.querySelector("#speakers-swiper");
 for (const speaker of speakerList) {

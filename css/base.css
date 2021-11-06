@@ -74,6 +74,7 @@ body {
     background-color: #1c1e35;
     font-family: "Phantom Sans", sans-serif;
     color: #eeeeee;
+    line-height: 1.6;
 }
 
 details {
@@ -97,6 +98,8 @@ summary {
     background: #454759;
     padding: 1.4rem;
     font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 a, a:link, a:visited {
@@ -444,6 +447,10 @@ hr {
 
 details[open]>*:not(summary) {
     animation: details-show 0.2s ease-in-out;
+}
+
+details[open]>summary {
+    color: #3cc8e7;
 }
 
 @keyframes glow {
