@@ -201,7 +201,7 @@ footer ul.container {
 .footer-banner #hc {
     display: inline-block;
     padding: 0.5em;
-    font-size: 46px;
+    font-size: 2rem;
     top: 0;
 }
 
@@ -220,7 +220,7 @@ footer ul.container {
     display: inline-block;
     font-family: roboto;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 1rem;
 }
 
 .footer-links {
@@ -233,7 +233,7 @@ footer ul.container {
 }
 
 .footer-links .outro {
-    font-size: 18px;
+    font-size: 0.8rem;
     font-weight: 300;
     padding-top: 0.5em;
 }
