@@ -1,23 +1,47 @@
 #contact-us {
     border-radius: 1rem;
-    padding: 2rem;
+    margin: 0;
     background: linear-gradient( 99.76deg, rgba(64, 127, 221, 0.62) 0.41%, rgba(64, 127, 221, 0.07) 98.75%);
+    padding-left: 2rem;
+    width: 80%;
 }
 
 .contact-us-header {
     font-family: "Phantom Sans";
     font-weight: bold;
     font-size: 2rem;
+    margin: 0;
 }
 
 .contact-us-item {
     display: flex;
-    margin: 1rem;
-    margin-left: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     align-items: center;
+    padding: 0;
 }
 
 .contact-us-item svg {
-    max-width: 2rem;
-    margin-right: 2rem;
+    width: 2rem;
+    margin-right: 1rem;
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+    .contact-us-item {
+        margin: auto;
+    }
+    .contact-us-item svg {
+        width: 3rem;
+    }
+    #contact-us {
+        padding-left: 1rem;
+    }
+    .contact-us-handle {
+        display: none;
+    }
+    .contact-us-items {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
 }
