@@ -11,11 +11,17 @@
     background: linear-gradient(101.04deg, #008ea6 0.72%, #233f6f 100%);
 }
 
-.tabwrapper hr {
+.tabwrapper hr,
+.tabcontent hr {
     width: 90%;
     margin-top: 0.1rem;
     height: 0.2px;
     border: none;
+}
+
+.tabcontent hr {
+    width: 40%;
+    
 }
 
 .tab button {
