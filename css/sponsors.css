@@ -47,36 +47,44 @@ depending on actual sponsors can use either.
     background-size: cover;
 }
 
-#sponsors > div {
+#sponsors>div {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .sponsor1 {
-    background: url("/assets/img/gmc.png");
+    background: url("../assets/img/gmc.png");
 }
+
 .sponsor2 {
-    background: url("/assets/img/echo3d.png");
+    background: url("../assets/img/echo3d.png");
 }
+
 .sponsor3 {
-    background: url("/assets/img/egghead.png");
+    background: url("../assets/img/egghead.png");
 }
+
 .sponsor4 {
-    background: url("/assets/img/leading-learners.png");
+    background: url("../assets/img/leading-learners.png");
 }
+
 .sponsor5 {
-    background: url("/assets/img/taskade.png");
+    background: url("../assets/img/taskade.png");
 }
+
 .sponsor6 {
     background: url("https://via.placeholder.com/300x300");
 }
+
 .sponsor7 {
     background: url("https://via.placeholder.com/300x300");
 }
+
 .sponsor8 {
     background: url("https://via.placeholder.com/300x300");
 }
+
 .sponsor9 {
     background: url("https://via.placeholder.com/300x300");
 }
