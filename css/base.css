@@ -170,6 +170,7 @@ footer ul.container {
 #splash {
     margin-top: 5rem;
     margin-bottom: 8rem;
+    max-width: 100%;
 }
 
 #splash>h1 {
@@ -256,8 +257,7 @@ footer ul.container {
 }
 
 #about>* {
-    margin-left: 6vw;
-    margin-right: 6vw;
+    margin-left: 10vw;
 }
 
 #about>p {
@@ -274,11 +274,11 @@ a.register-button {
     font-family: "Phantom Sans";
     color: white;
     font-size: 1.3rem;
-    float: left;
     min-width: 30%;
     text-decoration: none;
     border: none;
     text-align: center;
+    font-weight: bold;
 }
 
 .no-line {
@@ -389,12 +389,15 @@ hr {
         font-size: 1rem;
     }
     #splash {
-        margin: auto;
+        margin: 0;
     }
     .body-section {
         width: 95vw;
         padding-top: 1rem;
         padding-bottom: 1rem;
+    }
+    #about>* {
+        margin-left: 2.5vw;
     }
     details {
         margin: 4vw;
