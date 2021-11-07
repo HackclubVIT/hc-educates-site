@@ -276,7 +276,12 @@ footer ul.container {
     font-size: 1.3rem;
     float: left;
     min-width: 30%;
+    text-decoration: none;
     border: none;
+}
+
+.no-line{
+    text-decoration: none;
 }
 
 #schedule {
