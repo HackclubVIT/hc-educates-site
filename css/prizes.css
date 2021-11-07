@@ -21,7 +21,6 @@
 
 .tabcontent hr {
     width: 40%;
-    
 }
 
 .tab button {
@@ -75,13 +74,31 @@
     justify-content: left;
 }
 
-#summary {
-    background-image: url("../assets/img/prize-illustration.png");
+.image-on-right {
     background-position: right bottom;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
+#summary {
+    background-image: url("../assets/img/summary-prize.png");
+}
+
+#first-prize {
+    background-image: url("../assets/img/first-prize.png");
+}
+
+#second-prize {
+    background-image: url("../assets/img/second-prize.png");
+}
+
+#third-prize {
+    background-image: url("../assets/img/third-prize.png");
+}
+
+#participants {
+    background-image: url("../assets/img/participants.png");
+}
 @media not all and (hover: none) {
     .tab button:hover {
         letter-spacing: 0;
