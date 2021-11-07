@@ -150,7 +150,7 @@ footer ul.container {
 #main-nav a {
     font-size: 1.2rem;
     font-weight: bold;
-    margin: 1.5rem;
+    margin: 0.7rem;
     text-decoration: none;
 }
 
@@ -224,8 +224,7 @@ footer ul.container {
 }
 
 .footer-links {
-    margin: 1.5em;
-    padding: 1.5em;
+    padding: 1em;
 }
 
 .footer-links .comm {
@@ -268,6 +267,8 @@ footer ul.container {
 
 .register {
     border-radius: 20px;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
     padding: 1rem;
     background: linear-gradient(#2489a2, #1b537d);
     font-family: "Phantom Sans";
@@ -289,6 +290,8 @@ footer ul.container {
 
 .schedule-item {
     flex: 40%;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
     margin: 2%;
     background-color: #a4a5ae;
     color: #000000;
@@ -468,3 +471,23 @@ details[open]>summary {
 .three-d.blue.large {
     animation: 2s glow infinite;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 1vw;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #233F6F;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #75D6FF;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
