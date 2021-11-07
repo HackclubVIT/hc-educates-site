@@ -246,23 +246,21 @@
         <!-- TODO: tabbed layout of prizes. -->
         <h2>Prizes</h2>
         <!-- Tab links -->
-        <div class="tabwrapper">
-            <div class="tab">
-                <button id="link-summary" class="tablinks">Summary</button>
-                <button id="link-first-prize" class="tablinks">First prize</button>
-                <button id="link-second-prize" class="tablinks">Second prize</button>
-                <button id="link-third-prize" class="tablinks">Third prize</button>
-                <button id="link-participants" class="tablinks">Participants</button>
+        <div class="tab-wrapper">
+            <div class='tab-links'>
+                <button id="link-summary" class='tab'>Summary</button>
+                <button id="link-first-prize" class='tab'>First prize</button>
+                <button id="link-second-prize" class='tab'>Second prize</button>
+                <button id="link-third-prize" class='tab'>Third prize</button>
+                <button id="link-participants" class='tab'>Participants</button>
             </div>
-            <hr>
             <!-- Tab contents. Make sure the div id's match the button's innertext -->
-            <div id="summary" class="tabcontent image-on-right">
+            <div id="summary" class="tab-contents image-on-right">
                 <div class="flex-column">
-                    <div class="prize-pool">
+                    <div class="prize-pool flex-column">
                         Total prize pool
                         <strong>₹ 270,000</strong>
                     </div>
-                    <hr>
                     <div class="prize-categories">
                         <div class="flex-centered prize-category">
                             <svg viewBox="0 0 146 145" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -301,21 +299,19 @@
                 </div>
             </div>
 
-            <div id="first-prize" class="tabcontent image-on-right">
+            <div id="first-prize" class="tab-contents image-on-right">
                 <div class="flex-column">
-                    <div class="prize-pool">
+                    <div class="prize-pool flex-column">
                         First Prize
                         <strong>₹ 80,000</strong>
                     </div>
-                    <hr>
+
                     <div class="prize-categories">
                         <div class="flex-centered prize-category">
                             <div class="prize-amount">
                                 ₹ 3000
                             </div>
-                            <div class="dash-bw-amount-and-name">
-                                -
-                            </div>
+
                             <div class="prize-name">
                                 Cash Prize
                             </div>
@@ -324,9 +320,7 @@
                             <div class="prize-amount">
                                 ₹ 7,500
                             </div>
-                            <div class="dash-bw-amount-and-name">
-                                -
-                            </div>
+
                             <div class="prize-name">
                                 Leading Learners: Expansion pack
                             </div>
@@ -335,9 +329,7 @@
                             <div class="prize-amount">
                                 ₹ 45,000
                             </div>
-                            <div class="dash-bw-amount-and-name">
-                                -
-                            </div>
+
                             <div class="prize-name">
                                 Taskade: Lifetime Premium Upgrade
                             </div>
@@ -346,9 +338,7 @@
                             <div class="prize-amount">
                                 ₹ 7,000
                             </div>
-                            <div class="dash-bw-amount-and-name">
-                                -
-                            </div>
+
                             <div class="prize-name">
                                 Echo3D: 1 Month Free Business Tier Access
                             </div>
@@ -357,9 +347,7 @@
                             <div class="prize-amount">
                                 ₹ 18,000
                             </div>
-                            <div class="dash-bw-amount-and-name">
-                                -
-                            </div>
+
                             <div class="prize-name">
                                 Egghead.io: 1 Year Free Access
                             </div>
@@ -368,21 +356,19 @@
                 </div>
             </div>
 
-            <div id="second-prize" class="tabcontent image-on-right">
+            <div id="second-prize" class="tab-contents image-on-right">
                 <div class="flex-column">
-                    <div class="prize-pool">
+                    <div class="prize-pool flex-column">
                         Second Prize
                         <strong>₹ 79,000</strong>
                     </div>
-                    <hr>
+
                     <div class="prize-categories">
                         <div class="flex-centered prize-category">
                             <div class="prize-amount">
                                 ₹ 2000
                             </div>
-                            <div class="dash-bw-amount-and-name">
-                                -
-                            </div>
+
                             <div class="prize-name">
                                 Cash Prize
                             </div>
@@ -391,9 +377,7 @@
                             <div class="prize-amount">
                                 ₹ 7,500
                             </div>
-                            <div class="dash-bw-amount-and-name">
-                                -
-                            </div>
+
                             <div class="prize-name">
                                 Leading Learners: Expansion pack
                             </div>
@@ -402,9 +386,7 @@
                             <div class="prize-amount">
                                 ₹ 45,000
                             </div>
-                            <div class="dash-bw-amount-and-name">
-                                -
-                            </div>
+
                             <div class="prize-name">
                                 Taskade: Lifetime Premium Upgrade
                             </div>
@@ -413,9 +395,7 @@
                             <div class="prize-amount">
                                 ₹ 7,000
                             </div>
-                            <div class="dash-bw-amount-and-name">
-                                -
-                            </div>
+
                             <div class="prize-name">
                                 Echo3D: 1 Month Free Business Tier Access
                             </div>
@@ -424,9 +404,7 @@
                             <div class="prize-amount">
                                 ₹ 18,000
                             </div>
-                            <div class="dash-bw-amount-and-name">
-                                -
-                            </div>
+
                             <div class="prize-name">
                                 Egghead.io: 1 Year Free Access
                             </div>
@@ -434,21 +412,19 @@
                     </div>
                 </div>
             </div>
-            <div id="third-prize" class="tabcontent image-on-right">
+            <div id="third-prize" class="tab-contents image-on-right">
                 <div class="flex-column">
-                    <div class="prize-pool">
+                    <div class="prize-pool flex-column">
                         Third Prize
                         <strong>₹ 78,000</strong>
                     </div>
-                    <hr>
+
                     <div class="prize-categories">
                         <div class="flex-centered prize-category">
                             <div class="prize-amount">
                                 ₹ 1000
                             </div>
-                            <div class="dash-bw-amount-and-name">
-                                -
-                            </div>
+
                             <div class="prize-name">
                                 Cash Prize
                             </div>
@@ -457,9 +433,7 @@
                             <div class="prize-amount">
                                 ₹ 7,500
                             </div>
-                            <div class="dash-bw-amount-and-name">
-                                -
-                            </div>
+
                             <div class="prize-name">
                                 Leading Learners: Expansion pack
                             </div>
@@ -468,9 +442,7 @@
                             <div class="prize-amount">
                                 ₹ 45,000
                             </div>
-                            <div class="dash-bw-amount-and-name">
-                                -
-                            </div>
+
                             <div class="prize-name">
                                 Taskade: Lifetime Premium Upgrade
                             </div>
@@ -479,9 +451,7 @@
                             <div class="prize-amount">
                                 ₹ 7,000
                             </div>
-                            <div class="dash-bw-amount-and-name">
-                                -
-                            </div>
+
                             <div class="prize-name">
                                 Echo3D: 1 Month Free Business Tier Access
                             </div>
@@ -490,9 +460,7 @@
                             <div class="prize-amount">
                                 ₹ 18,000
                             </div>
-                            <div class="dash-bw-amount-and-name">
-                                -
-                            </div>
+
                             <div class="prize-name">
                                 Egghead.io: 1 Year Free Access
                             </div>
@@ -500,20 +468,17 @@
                     </div>
                 </div>
             </div>
-            <div id="participants" class="tabcontent image-on-right">
+            <div id="participants" class="tab-contents image-on-right">
                 <div class="flex-column">
-                    <div class="prize-pool">
+                    <div class="prize-pool flex-column">
                         Participants
                         <strong>₹ 30,000</strong>
                     </div>
-                    <hr>
+
                     <div class="prize-categories">
                         <div class="flex-centered prize-category">
                             <div class="prize-amount">
                                 ₹ 23,000
-                            </div>
-                            <div class="dash-bw-amount-and-name">
-                                -
                             </div>
                             <div class="prize-name">
                                 Taskade: 5 - years Premium Upgrade
@@ -523,9 +488,7 @@
                             <div class="prize-amount">
                                 ₹ 7,000
                             </div>
-                            <div class="dash-bw-amount-and-name">
-                                -
-                            </div>
+
                             <div class="prize-name">
                                 Echo3D: 1 Month Free Business Tier Access
                             </div>
@@ -623,7 +586,7 @@
 
     <section id='contact-us' class='flex-column body-section'>
         <div class='contact-us-header'>
-            Contact us at
+            Contact us
         </div>
         <div class="contact-us-items flex-column">
             <div class="contact-us-item">

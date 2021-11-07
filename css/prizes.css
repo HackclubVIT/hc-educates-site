@@ -1,29 +1,18 @@
-.tab {
+.tab-links {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 0;
+    padding-top: 0.5rem;
 }
 
-.tabwrapper {
-    padding-top: 0.5rem;
+.tab-wrapper {
     border-radius: 0.5rem;
-    margin: 1.2rem;
     background: linear-gradient(101.04deg, #008ea6 0.72%, #233f6f 100%);
 }
 
-.tabwrapper hr,
-.tabcontent hr {
-    width: 90%;
-    margin-top: 0.1rem;
-    height: 0.2px;
-    border: none;
-}
-
-.tabcontent hr {
-    width: 40%;
-}
-
-.tab button {
+.tab-links button {
     background-color: transparent;
     border: none;
     outline: none;
@@ -35,16 +24,16 @@
     font-family: "Phantom Sans", sans-serif;
 }
 
-/* .tab button.active {
+/* .tab-links button.active {
     font-weight: bold;
     transform: scale(2);
 } */
 
-.tab button.active {
+.tab-links button.active {
     font-weight: bold;
 }
 
-.tabcontent {
+.tab-contents {
     display: flex;
     justify-content: space-between;
     display: none;
@@ -99,21 +88,61 @@
 #participants {
     background-image: url("../assets/img/participants.png");
 }
+
+.prize-pool {
+    font-size: 2rem;
+    padding: 1rem;
+    width: 40%;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+    margin-left: 1rem;
+}
+
+div[id$=-prize] .prize-categories, #participants .prize-categories {
+    width: 90%;
+    padding: 1rem;
+}
+
+div[id$=-prize] .prize-category, #participants .prize-category {
+    align-items: flex-start;
+}
+
+.prize-amount {
+    min-width: 8ch;
+    font-weight: bold;
+}
+
+.prize-name::before {
+    content: "-";
+    margin: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 @media not all and (hover: none) {
-    .tab button:hover {
+    .tab-links button:hover {
         letter-spacing: 0;
         transform: scale(1.2);
     }
 }
 
 @media screen and (max-aspect-ratio: 4/3) {
-    .tab button {
+    .tab-links button {
         font-size: 1rem;
     }
 }
 
 @media screen and (max-aspect-ratio: 1/1) {
-    .tab button {
+    .tab-links button {
         font-size: 0.8rem;
+    }
+    .prize-pool {
+        font-size: 1.4rem;
+        padding: 0.25rem;
+    }
+    .prize-name::before {
+        content: "-";
+        margin: 0.2rem;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }
