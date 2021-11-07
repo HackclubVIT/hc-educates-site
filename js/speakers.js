@@ -5,7 +5,7 @@ class Speaker {
 }
 
 const speakerList = [{
-    image: "../assets/img/galiciag.png",
+    image: "assets/img/galiciag.png",
     name: "Galicia Gordon",
     occupation: "Educator",
     title: "Entrepreneurship",
@@ -17,7 +17,7 @@ const speakerList = [{
         is supporting thousands of unheard stories of students with 
         academic struggles and financial barriers in education.`,
 }, {
-    image: "../assets/img/praveenk.png",
+    image: "assets/img/praveenk.png",
     name: "Praveen Kumar",
     occupation: "Full-stack specialist",
     title: "Introduction to Flutter",
