@@ -1,8 +1,23 @@
-.contact-us {
+#contact-us {
+    border-radius: 1rem;
+    padding: 2rem;
+    background: linear-gradient( 99.76deg, rgba(64, 127, 221, 0.62) 0.41%, rgba(64, 127, 221, 0.07) 98.75%);
+}
+
+.contact-us-header {
+    font-family: "Phantom Sans";
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.contact-us-item {
     display: flex;
-    background: linear-gradient(
-        99.76deg,
-        rgba(64, 127, 221, 0.62) 0.41%,
-        rgba(64, 127, 221, 0.07) 98.75%
-    );
+    margin: 1rem;
+    margin-left: 0;
+    align-items: center;
+}
+
+.contact-us-item svg {
+    max-width: 2rem;
+    margin-right: 2rem;
 }
