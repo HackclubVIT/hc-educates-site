@@ -74,21 +74,21 @@ depending on actual sponsors can use either.
 }
 
 .sponsor6 {
-    background: url("../assets//img//DU\ Beat\ logo.jpg");
+    background: url("../assets//img//du-beat.jpg");
 }
 
 .sponsor7 {
-    background: url("../assets/img/voice-it-Logo_Main-01.png");
+    background: url("../assets/img/voice-it.png");
 }
 
 .sponsor8 {
-    background: url("../assets/img/vitrendz\ white\ logo\ \(1\).png");
+    background: url("../assets/img/vitrendz-logo-white.png");
 }
 
 .sponsor9 {
     background: url("../assets//img//cyberjunk.png");
 }
 
-#sponsor:hover{
+#sponsor:hover {
     transform: scale(1.2);
 }
