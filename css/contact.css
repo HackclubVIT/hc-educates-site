@@ -1,0 +1,8 @@
+.contact-us {
+    display: flex;
+    background: linear-gradient(
+        99.76deg,
+        rgba(64, 127, 221, 0.62) 0.41%,
+        rgba(64, 127, 221, 0.07) 98.75%
+    );
+}
