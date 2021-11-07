@@ -26,6 +26,10 @@
     margin-right: 1rem;
 }
 
+.contact-us-handle {
+    font-size: 1.4rem;
+}
+
 @media screen and (max-aspect-ratio: 1/1) {
     .contact-us-item {
         margin: auto;
