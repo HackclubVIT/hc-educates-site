@@ -265,7 +265,7 @@ footer ul.container {
     max-width: 60%;
 }
 
-.register {
+a.button {
     border-radius: 20px;
     transition-duration: 0.15s;
     transition-timing-function: ease-in-out;
@@ -278,6 +278,7 @@ footer ul.container {
     min-width: 30%;
     text-decoration: none;
     border: none;
+    text-align: center;
 }
 
 .no-line{
