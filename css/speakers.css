@@ -72,8 +72,11 @@
 }
 
 .speaker-image {
-    max-width: 40%;
-    margin-bottom: 1rem;
+    width: 40vw;
+    height: 40vh;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .speaker-image img {

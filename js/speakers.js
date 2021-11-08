@@ -57,7 +57,7 @@ const speakerList = [{
     title: "",
     about: `A passionate and self-motivated electronics engineer keen on broadening his skill set both in digital and analog and to delve deeper into the realm of electronics. Has learnt to steer his way through complex problems by producing innovative solutions by virtue of the knowledge gained through the previous projects he has done.
     A Top Rated Embedded Systems Developer on Upwork. Extensive experience working with Wifi/BLE System-on-Chips from Espressif systems and Nordic Semiconductors.`
-},  {
+}, {
     image: "assets/img/ajinkya.png",
     name: "Ajinkya Lohakare",
     occupation: "",
@@ -72,11 +72,12 @@ const speakerList = [{
 
 const container = document.querySelector("#speakers-swiper");
 for (const speaker of speakerList) {
-    container.innerHTML += `
-        <div class="swiper-slide">
+
+    let slide = document.createElement('div');
+    slide.className = 'swiper-slide';
+    slide.innerHTML += `
             <div class="speaker-profile">
                 <div class="speaker-image">
-                    <img src="${speaker.image}">
                 </div>
                 <div class='speaker-details flex-column flex-centered'>
                     <div class="speaker-name">
@@ -95,8 +96,11 @@ for (const speaker of speakerList) {
                     ${speaker.about}
                 </div>
             </div>
-        </div>
     `;
+
+    slide.querySelector('.speaker-image').style.backgroundImage = `url("${speaker.image}")`;
+
+    container.appendChild(slide);
 }
 
 const swiper = new Swiper(".speaker-swiper", {
