@@ -121,6 +121,10 @@ div[id$=-prize] .prize-category, #participants .prize-category {
     margin-bottom: 0;
 }
 
+.eachMember {
+    font-size: 1.5rem;
+}
+
 @media not all and (hover: none) {
     .tab-links button:hover {
         letter-spacing: 0;
@@ -149,12 +153,26 @@ div[id$=-prize] .prize-category, #participants .prize-category {
         margin-bottom: 0;
     }
     #summary .prize-categories {
-        width: 80%;
+        width: 100%;
     }
     .image-on-right {
-        background-size: auto 50%;
+        background-size: 0;
+    }
+    .prize-pool {
+        width: unset;
+        margin-left: 0;
+        margin-bottom: 1rem;
     }
     .prize-amount, .prize-name {
         font-size: 1rem;
+    }
+    .prize-money, .eachMember {
+        font-size: 1em;
+    }
+    .prize-category {
+        margin-bottom: 1rem;
+    }
+    .prize-category:last-child {
+        margin-bottom: auto;
     }
 }

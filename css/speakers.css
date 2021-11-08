@@ -10,7 +10,6 @@
     align-items: center;
     text-align: center;
     border-radius: 0.5rem;
-    min-height: 50vh;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
@@ -72,8 +71,11 @@
 }
 
 .speaker-image {
-    max-width: 40%;
-    margin-bottom: 1rem;
+    width: 40vw;
+    height: 40vh;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .speaker-image img {
@@ -119,5 +121,7 @@
     }
     .speaker-image {
         max-width: 100%;
+        width: 60vw;
+        height: 60vh;
     }
 }
