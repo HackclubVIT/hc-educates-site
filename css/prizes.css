@@ -24,11 +24,6 @@
     font-family: "Phantom Sans", sans-serif;
 }
 
-/* .tab-links button.active {
-    font-weight: bold;
-    transform: scale(2);
-} */
-
 .tab-links button.active {
     font-weight: bold;
 }
@@ -46,17 +41,20 @@
     flex-direction: column;
 }
 
+#summary .prize-categories {
+    margin-left: 1rem;
+}
+
 .prize-money {
-    padding: 5% 5%;
+    padding: 1rem;
     display: inline-block;
     font-family: "Phantom Sans", sans-serif;
-    font-size: 3.4vw;
+    font-size: 2rem;
     font-weight: bold;
 }
 
 .prize-categories svg {
-    width: 20%;
-    padding: 1em;
+    width: 4rem;
 }
 
 .prize-category {
@@ -67,6 +65,7 @@
     background-position: right bottom;
     background-size: contain;
     background-repeat: no-repeat;
+    margin: 1rem;
 }
 
 #summary {
@@ -104,6 +103,10 @@ div[id$=-prize] .prize-categories, #participants .prize-categories {
 
 div[id$=-prize] .prize-category, #participants .prize-category {
     align-items: flex-start;
+}
+
+.prize-amount, .prize-name {
+    font-size: 1.4rem;
 }
 
 .prize-amount {
@@ -144,5 +147,14 @@ div[id$=-prize] .prize-category, #participants .prize-category {
         margin: 0.2rem;
         margin-top: 0;
         margin-bottom: 0;
+    }
+    #summary .prize-categories {
+        width: 80%;
+    }
+    .image-on-right {
+        background-size: auto 50%;
+    }
+    .prize-amount, .prize-name {
+        font-size: 1rem;
     }
 }
