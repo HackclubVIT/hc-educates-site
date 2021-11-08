@@ -169,4 +169,10 @@ div[id$=-prize] .prize-category, #participants .prize-category {
     .prize-money, .eachMember {
         font-size: 1em;
     }
+    .prize-category {
+        margin-bottom: 1rem;
+    }
+    .prize-category:last-child {
+        margin-bottom: auto;
+    }
 }
