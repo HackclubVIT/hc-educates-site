@@ -66,7 +66,7 @@ const speakerList = [
     },
     {
         image: "assets/img/ajinkya.png",
-        name: "Ajinkya Lokhante",
+        name: "Ajinkya Lohakare",
         occupation: "Security consultant",
         title: "Ethical hacking",
         about: `Mr. Ajinkya Lohakare is a paid security consultant , Ethical Hacking expert, cyber security researcher , Entrepreneur, Public speaker and Author.
