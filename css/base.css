@@ -308,6 +308,9 @@ a.register-button {
     border-radius: 2rem;
     font-size: 1.4rem;
 }
+.active {
+    background-color: white;
+}
 
 .schedule-item>p {
     padding: 0.5rem 0 1rem 0;
