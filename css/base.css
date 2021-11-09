@@ -308,6 +308,7 @@ a.register-button {
     border-radius: 2rem;
     font-size: 1.4rem;
 }
+
 .active {
     background-color: white;
 }
@@ -336,6 +337,9 @@ hr {
 }
 
 @media screen and (max-aspect-ratio: 1/1) {
+    #about {
+        background-size: 0;
+    }
     .footer-banner img {
         padding: 0em;
         padding-left: 0.5em;
@@ -416,8 +420,8 @@ hr {
     #splash>.large {
         font-size: 3.4rem;
     }
-    #about {
-        background-size: auto 40%;
+    #about>p {
+        max-width: 100%;
     }
 }
 
