@@ -32,6 +32,27 @@ const speakerList = [
     Oh, and out of techie stuff, he’s a Cat Lover.`,
     },
     {
+        image: "assets/img/siddharth.png",
+        name: "Siddharth Singha Roy",
+        occupation: "Upcoming SDE @Microsoft",
+        title: "Flutter Workshop",
+        about: `I'm Siddharth Singha Roy, a final-year student at VIT and an upcoming SDE at Microsoft. I have cleared 
+        seven interview rounds and have been offered jobs from reputable companies, including PayPal, Morgan Stanley, 
+        Udaan, De Shaw, JP Morgan, and NatWest Group. Moreover, I have won multiple hackathons in the past including national 
+        and international level hackathons. A CP enthusiast with 4* on CodeChef and over 950+ problems solved on LeetCode. 
+        All of this while maintaining a 9.55 CGPA and ranking 3 in the CS department.`,
+    },
+    {
+        image: "assets/img/aditya_thakur.png",
+        name: "Aditya Thakur",
+        occupation: "App Dev",
+        title: "Flutter Workshop",
+        about: `Aditya is a 𝗙𝗹𝘂𝘁𝘁𝗲𝗿 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 with experience in building Cross-Platform Applications. He has previously been 
+        a speaker at the Flutter Global Summit'21 and a number of events at Universities and Clubs across India. Aditya is also
+        a creator with a 4.75K YouTube channel and a 500+ member Discord Community (teamaditya.co). He believes in adding value 
+        and giving back to the community.`,
+    },
+    {
         image: "assets/img/amanv.png",
         name: "Aman Verma",
         occupation: "App Dev",
@@ -46,7 +67,16 @@ const speakerList = [
         name: "Hasnain Sikora",
         occupation: "App Dev",
         title: "Introduction to Flutter",
-        about: `Hasnain Sikora is an enthusiastic person who loves challenges and learning new things. As an integral part of the Hack Club of his college, Hasnain has contributed to the completion of several projects and helped many of his peers in their journey to become app developers. He has also undertaken several projects in his field of specialization, artificial intelligence, and machine learning. These experiences have made him adept in several important concepts like Deep learning, machine learning, full-stack web and app development and  game development . Out of his sheer curiosity about the field, he has also enamored a new interest in philosophical sciences. Hasnain also takes immense pleasure in sketching, 3D model development, photography and enjoys a wide array of sports. He is a diligent, hard-working, and optimistic young man who uplifts everyone around him.`,
+        about: `Hasnain Sikora is an enthusiastic person who loves challenges and learning new things. As an integral part of the Hack Club of his college, Hasnain has contributed to the completion of several projects and helped many of his peers in their journey to become app developers. He has also undertaken several projects in his field of specialization, artificial intelligence, and machine learning. These experiences have made him adept in several important concepts like Deep learning, machine learning, full-stack web and app development and  game development . Hasnain also takes immense pleasure in sketching, 3D model development, photography and enjoys a wide array of sports. He is a diligent, hard-working, and optimistic young man who uplifts everyone around him.`,
+    },
+    {
+        image: "assets/img/deeptiman.png",
+        name: "Deeptimaan Banerjee",
+        occupation: "Web Developer",
+        title: "Introduction to Digital Integrated Circuit Design",
+        about: `I am Deeptimaan Banerjee, a tech enthusiast and a full-stack web developer. With a knack for Data Science and Automation, I've developed many data miners and web crawlers over time, and have also published a research paper under the CCPS department of VIT Chennai. I currently intern as a Health Economics and Outcomes Research Intern at Becton Dickinson, and have helped them automate and digitize their various workflows. 
+        I've been an active part of the Hack Club since my second year and it has enabled me to broaden my technical knowledge to a great extent. I'm excited to share what I have learned from my experiences so far through this workshop.
+        `,
     },
     {
         image: "assets/img/haridhrak.png",
