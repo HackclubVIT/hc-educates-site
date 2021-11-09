@@ -9,10 +9,10 @@ const revealTab = (evt, tabName) => {
     evt.currentTarget.className += " active";
 };
 
-
 Array.from(document.getElementsByClassName("tab")).forEach(link =>
-    link.addEventListener("click", evt =>
-        revealTab(evt, link.id.split("link-").at(-1))
-    )
+    link.addEventListener("click", evt => {
+        const [, tabName] = link.id.split("link-");
+        revealTab(evt, tabName);
+    })
 );
 document.getElementById("link-summary").click();
