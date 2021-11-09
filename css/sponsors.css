@@ -89,6 +89,28 @@ depending on actual sponsors can use either.
     background: url("../assets//img//cyberjunk.png");
 }
 
-#sponsor:hover {
-    transform: scale(1.2);
+.sponsor10 {
+    background: url("../assets//img//codingninjas.png");
+}
+
+.sponsor11 {
+    background: url("../assets//img/rahee.png");
+}
+
+.sponsor12 {
+    background: url("../assets//img//interviewcake.png");
+}
+
+#sponsors>div:hover {
+    transform: scale(1.1);
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.15s;
+    box-shadow: 2px 2px 2px 1px #75D6FF;
+}
+
+@media screen and (max-aspect-ratio: 4/3) {
+    #sponsors>div:hover {
+        transform: none;
+        box-shadow: none;
+    }
 }
