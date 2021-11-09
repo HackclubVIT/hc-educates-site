@@ -35,12 +35,22 @@ const speakerList = [
         image: "assets/img/siddharth.png",
         name: "Siddharth Singha Roy",
         occupation: "Upcoming SDE @Microsoft",
-        title: "Flutter Workshop",
+        title: "Dynamic Programming",
         about: `I'm Siddharth Singha Roy, a final-year student at VIT and an upcoming SDE at Microsoft. I have cleared 
         seven interview rounds and have been offered jobs from reputable companies, including PayPal, Morgan Stanley, 
         Udaan, De Shaw, JP Morgan, and NatWest Group. Moreover, I have won multiple hackathons in the past including national 
         and international level hackathons. A CP enthusiast with 4* on CodeChef and over 950+ problems solved on LeetCode. 
         All of this while maintaining a 9.55 CGPA and ranking 3 in the CS department.`,
+    },
+    {
+        image: "assets/img/ajinkya.png",
+        name: "Ajinkya Lohakare",
+        occupation: "Security consultant",
+        title: "Ethical Hacking",
+        about: `Mr. Ajinkya Lohakare is a paid security consultant , Ethical Hacking expert, cyber security researcher , Entrepreneur, Public speaker and Author.
+    He does security consulting for fortune 500 companies and the law enforcements , perform penetration testing services for the world’s largest companies and teaches social engineering classes to 
+    Dozens of companies and government agencies. He has also assisted law enforcement in India , Bangladesh & Sri-lanka since 2015 on cyber crime cases.
+    Ajinkya has given keynotes and presentations at a number of conferences around the world . Alongside conducting 1200+ Workshops and being an inspiring JOSH talk Speaker, he has also delivered talks at event like , Josh talk , Vedh talk , The dais conclave etc.`,
     },
     {
         image: "assets/img/aditya_thakur.png",
@@ -73,7 +83,7 @@ const speakerList = [
         image: "assets/img/deeptiman.png",
         name: "Deeptimaan Banerjee",
         occupation: "Web Developer",
-        title: "Introduction to Digital Integrated Circuit Design",
+        title: "Introduction to LAMP Stack",
         about: `I am Deeptimaan Banerjee, a tech enthusiast and a full-stack web developer. With a knack for Data Science and Automation, I've developed many data miners and web crawlers over time, and have also published a research paper under the CCPS department of VIT Chennai. I currently intern as a Health Economics and Outcomes Research Intern at Becton Dickinson, and have helped them automate and digitize their various workflows. 
         I've been an active part of the Hack Club since my second year and it has enabled me to broaden my technical knowledge to a great extent. I'm excited to share what I have learned from my experiences so far through this workshop.
         `,
@@ -93,16 +103,6 @@ const speakerList = [
         title: "Embedded Systems in the real-world",
         about: `A passionate and self-motivated electronics engineer keen on broadening his skill set both in digital and analog and to delve deeper into the realm of electronics. Has learnt to steer his way through complex problems by producing innovative solutions by virtue of the knowledge gained through the previous projects he has done.
     A Top Rated Embedded Systems Developer on Upwork. Extensive experience working with Wifi/BLE System-on-Chips from Espressif systems and Nordic Semiconductors.`,
-    },
-    {
-        image: "assets/img/ajinkya.png",
-        name: "Ajinkya Lohakare",
-        occupation: "Security consultant",
-        title: "Ethical hacking",
-        about: `Mr. Ajinkya Lohakare is a paid security consultant , Ethical Hacking expert, cyber security researcher , Entrepreneur, Public speaker and Author.
-    He does security consulting for fortune 500 companies and the law enforcements , perform penetration testing services for the world’s largest companies and teaches social engineering classes to 
-    Dozens of companies and government agencies. He has also assisted law enforcement in India , Bangladesh & Sri-lanka since 2015 on cyber crime cases.
-    Ajinkya has given keynotes and presentations at a number of conferences around the world . Alongside conducting 1200+ Workshops and being an inspiring JOSH talk Speaker, he has also delivered talks at event like , Josh talk , Vedh talk , The dais conclave etc.`,
     },
 ];
 
