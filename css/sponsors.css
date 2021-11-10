@@ -45,9 +45,10 @@ depending on actual sponsors can use either.
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: pointer;
 }
 
-#sponsors>div {
+#sponsors > a {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -101,15 +102,15 @@ depending on actual sponsors can use either.
     background: url("../assets//img//interviewcake.png");
 }
 
-#sponsors>div:hover {
+#sponsors > a:hover {
     transform: scale(1.1);
     transition-timing-function: ease-in-out;
     transition-duration: 0.15s;
-    box-shadow: 2px 2px 2px 1px #75D6FF;
+    box-shadow: 2px 2px 2px 1px #75d6ff;
 }
 
 @media screen and (max-aspect-ratio: 4/3) {
-    #sponsors>div:hover {
+    #sponsors > a:hover {
         transform: none;
         box-shadow: none;
     }
