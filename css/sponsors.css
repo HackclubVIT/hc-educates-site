@@ -102,6 +102,18 @@ depending on actual sponsors can use either.
     background: url("../assets//img//interviewcake.png");
 }
 
+.sponsor13 {
+    background: url("../assets/img/codehub.png");
+}
+
+.sponsor14 {
+    background: url("../assets/img/e-cell.jpeg");
+}
+
+.sponsor15 {
+    background: url("../assets/img/xyz.png");
+}
+
 #sponsors > a:hover {
     transform: scale(1.1);
     transition-timing-function: ease-in-out;
