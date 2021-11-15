@@ -336,6 +336,10 @@ hr {
     background-color: #ffffff;
 }
 
+.deadline {
+    font-size: 200%;
+}
+
 @media screen and (max-aspect-ratio: 1/1) {
     #about {
         background-size: 0;
